@@ -26,3 +26,7 @@ img[src$='#floatright'] {
 .chroma {
 	background-color: unset !important;
 }
+
+code .line-number {
+	margin-right: 1rem;
+}
