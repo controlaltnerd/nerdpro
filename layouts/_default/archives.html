@@ -19,12 +19,12 @@
 {{- if ne .Key "0001" }}
 <div class="archive-year">
   <h2 class="archive-year-header">
-    {{- replace .Key "0001" "" }}<sup class="archive-count">&nbsp;&nbsp;{{ len .Pages }}</sup>
+    {{- replace .Key "0001" "" }}<!--<sup class="archive-count">&nbsp;&nbsp;{{ len .Pages }}</sup>-->
   </h2>
   {{- range .Pages.GroupByDate "January" }}
   <div class="archive-month">
-    <h3 class="archive-month-header">{{- .Key }}<sup class="archive-count">&nbsp;&nbsp;{{ len .Pages }}</sup></h3>
-    <div class="archive-posts">
+    <h3 class="archive-month-header">{{- .Key }}<!--<sup class="archive-count">&nbsp;&nbsp;{{ len .Pages }}</sup>--></h3>
+    <div class="archive-notes">
       {{- range .Pages }}
       {{- if eq .Kind "page" }}
       <div class="archive-entry">
