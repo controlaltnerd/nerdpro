@@ -22,6 +22,10 @@
     flex-wrap: wrap;
 }
 
+.post-meta {
+    flex-direction: column;
+}
+
 .post-meta .i18n_list li {
     display: inline-flex;
     list-style: none;
